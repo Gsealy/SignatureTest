@@ -88,7 +88,7 @@ public class ConcurrentTestUtil {
   }
 
   public static void main(String[] args) throws InterruptedException, ExecutionException {
-    ConcurrentTestUtil.concurrentTest(64, 900000, new Callable<Boolean>() {
+    ConcurrentTestUtil.concurrentTest(32, 900000, new Callable<Boolean>() {
       @Override
       public Boolean call() throws Exception {
         return genEnveloped();
